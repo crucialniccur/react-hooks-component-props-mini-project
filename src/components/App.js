@@ -3,16 +3,20 @@ import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
-console.log(blogData);
+// console.log(blogData);
+
+const posts = blogData.posts;
+// console.log(post);
 
 function App() {
   return (
     <div className="App">
       <Header name={blogData.name} />
       <About image={blogData.image} about={blogData.about} alt={"blog logo"} />
-      <ArticleList />
+      <ArticleList post={posts} />
     </div>
   );
 }
 
+export { posts };
 export default App;
