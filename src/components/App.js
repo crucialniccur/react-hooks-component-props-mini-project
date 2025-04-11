@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header name={blogData.name} />
-      <About />
+      <About image={blogData.image} about={blogData.about} />
     </div>
   );
 }
