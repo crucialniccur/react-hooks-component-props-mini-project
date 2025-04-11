@@ -1,7 +1,13 @@
 import React from "react";
 
-const Article = () => {
-  return <h1>To be rendered</h1>;
+const Article = ({ title, date, preview }) => {
+  return (
+    <article>
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
+    </article>
+  );
 };
 
 export default Article;
