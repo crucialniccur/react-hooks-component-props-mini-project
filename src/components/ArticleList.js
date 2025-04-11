@@ -1,13 +1,16 @@
 import React from "react";
 import Article from "./Article";
-import { posts } from "./App";
 
 const ArticleList = ({ posts }) => {
-  console.log(posts);
-
+  console.log({ posts });
   return (
     <main>
-      <Article />
+      <Article
+        title={posts.title}
+        key={posts.id}
+        date={posts.date}
+        preview={posts.preview}
+      />
     </main>
   );
 };
