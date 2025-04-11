@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header name={blogData.name} />
       <About image={blogData.image} about={blogData.about} alt={"blog logo"} />
-      <ArticleList post={posts} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
