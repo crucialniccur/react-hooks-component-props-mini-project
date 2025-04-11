@@ -1,16 +1,5 @@
 import React from "react";
 
-const Article = ({ posts }) => {
-  //   console.log(posts);
-
-  //   let article = posts.map((post) => {});
-  return (
-    <article>
-      <h3>Pass title as a prop here</h3>
-      <small>Pass date as a prop here.The date has a default value too</small>
-      <p>Pass preview as a prop here</p>
-    </article>
-  );
-};
+const Article = () => {};
 
 export default Article;
